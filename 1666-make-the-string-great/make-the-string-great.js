@@ -3,8 +3,6 @@
  * @return {string}
  */
 var makeGood = function(s) {
-    let prev = null;
-    let resultString = '';
     let isGood = false;
 
     while (!isGood) {
