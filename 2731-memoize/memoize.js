@@ -6,7 +6,7 @@ function memoize(fn) {
     let memoizedValues = new Map();
 
     return function(...args) {
-        const argsString = args.toString();
+        const argsString =  JSON.stringify(args);
         if(memoizedValues.has(argsString)){
             return memoizedValues.get(argsString);
         }
